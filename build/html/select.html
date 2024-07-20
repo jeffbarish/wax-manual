@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Select Mode &#8212; Wax 0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=cb25574f" />
+    <script src="_static/documentation_options.js?v=2709fde1"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Play Mode" href="play.html" />
+    <link rel="prev" title="Introduction" href="introduction.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="select-mode">
+<span id="index-0"></span><span id="id1"></span><h1>Select Mode<a class="headerlink" href="#select-mode" title="Link to this heading">¶</a></h1>
+<section id="essential-reading">
+<h2>Essential reading<a class="headerlink" href="#essential-reading" title="Link to this heading">¶</a></h2>
+<p><a class="reference internal" href="#genre-selection"><span class="std std-ref">Genre selection</span></a></p>
+<p><a class="reference internal" href="#selecting-a-work"><span class="std std-ref">Selecting a work</span></a> (first two paragraphs)</p>
+</section>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">¶</a></h2>
+<p>Select mode is for selecting works to play. You can select works to play by surveying a list of works in the desired genre, by searching, by random selection, or from a queue file.</p>
+</section>
+<section id="genre-selection">
+<span id="index-1"></span><span id="id2"></span><h2>Genre selection<a class="headerlink" href="#genre-selection" title="Link to this heading">¶</a></h2>
+<img alt="_images/genre.png" class="align-center" src="_images/genre.png" />
+<p>The genre-selection button (top left in Select mode) displays the identity of the current genre. Pressing the button pops open a menu with a list of all genres defined for your collection. When you select a genre, Wax displays below the genre button a list of the works in the genre.</p>
+</section>
+<section id="left-panel-selecting-a-work">
+<span id="selecting-a-work"></span><span id="index-2"></span><h2>Left panel (selecting a work)<a class="headerlink" href="#left-panel-selecting-a-work" title="Link to this heading">¶</a></h2>
+<p>The left panel offers four pages with different methods for selecting recordings. You will use Selector most of the time. It presents a list of works for the selected genre. When you select a work, a panel opens with a list of tracks for the selected work. Search is used for searching for works. Random makes selections randomly based on criteria you control. Queue files selects works that you saved previously in queue files.</p>
+<section id="selector">
+<h3>Selector<a class="headerlink" href="#selector" title="Link to this heading">¶</a></h3>
+<img alt="_images/select.png" class="align-center" src="_images/select.png" />
+<p>When you first select a genre, the panel below the genre button will display a list of all works in that genre. The metadata that appears here are known as the “primary metadata”. You will see that the primary metadata keys (the labels for the columns) and even the number of metadata keys vary with genre. This flexibility allows you to decide the best way to describe the works in each genre. You specify the metadata values for each work in <a class="reference internal" href="edit.html#enter-metadata"><span class="std std-ref">Edit mode</span></a> when you rip or import a work and you specify the metadata fields in <a class="reference internal" href="waxconfig.html#wax-config"><span class="std std-ref">WaxConfig</span></a> when you design a new genre.</p>
+<p>By default, Wax sorts works according to the contents of the first column. To sort by a different column, click on its header. A down arrow in the header denotes the sort column. The alphabet panel allows you to scroll to a work based on the first letter of the value in the sort column.</p>
+<p>When you select one of the works, another panel appears with the tracks in the work. You can adjust the position of the divider separating the list of tracks from the list of works. By default, Wax selects all the tracks when you select a work. If you do not want to hear all the tracks on the work, select the ones that you want to hear. You can select a range of tracks by selecting the first one, then the last one while holding down the shift key. Or, you can sweep a range of tracks by holding the mouse button while moving the mouse. You can also select isolated tracks by holding the ctrl key while making additional selections. Note that each track has a number associated with it. The number is the duration of the track.</p>
+<blockquote>
+<div><div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>To adjust the width of columns in Select mode, drag the vertical line separating two headers.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you ever want to return to a display of just the works in the genre (and no tracks), you have three choices: (1) unselect all tracks in the work (using ctrl-click on selected tracks); (2) select the genre again; or (3) drag the divider separating the work and track panels to the bottom (but then you will have to readjust the divider when you want to see tracks).</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>After selecting a work, you can see all of its metadata by switching to <a class="reference internal" href="play.html#play-introduction"><span class="std std-ref">Play mode</span></a>. To switch to Play mode, you can use the Mode button in the global control panel, or you can use a shortcut for this common operation: double-click on the work.</p>
+</div>
+</div></blockquote>
+<section id="track-groups">
+<span id="index-3"></span><span id="id3"></span><h4>Track groups<a class="headerlink" href="#track-groups" title="Link to this heading">¶</a></h4>
+<p>Tracks with an arrow to the left of them are actually track <em>groups</em>. Tracks in a group share some characteristic. For example, the work of Chopin in the figure has four Scherzos. The track group has the title “Scherzo” and the individual tracks are “No. 1”, “No. 2”, and so on. Clicking on the arrow to the left of the group title opens and closes the group. Track groups simplify selection: If you want to play all the Scherzi, select the track group. If you want to play just a few of the tracks, open the track group and select them. The number associated with a track group is the duration of the entire group.</p>
+</section>
+<section id="filter-buttons">
+<h4>Filter buttons<a class="headerlink" href="#filter-buttons" title="Link to this heading">¶</a></h4>
+<p>The content of any column can be represented as a filter button. Drag the header of the column to the space to the right of the genre button. Filter buttons are most useful for columns with only a few values. For example, the Anthology genre in the figure above has a column for “subgenre”. It has only two values: “Instrumental” and “Vocal”. Converting the column to a filter button makes it possible to present only works for which the subgenre value matches the selection in the button. If you convert a column with many values to a filter button, the popup menu for the button might not fit in the display (but it will still function correctly). To restore a filter button to a column, select the “Restore” option in the menu of the filter button.</p>
+</section>
+</section>
+<section id="search">
+<h3>Search<a class="headerlink" href="#search" title="Link to this heading">¶</a></h3>
+<p id="index-4">There are two types of search, incremental and sibling.</p>
+<section id="incremental">
+<span id="incremental-search"></span><h4>Incremental<a class="headerlink" href="#incremental" title="Link to this heading">¶</a></h4>
+<img alt="_images/search-incremental.png" class="align-center" src="_images/search-incremental.png" />
+<p>To search your works for specific text, simply type the text in the entry. Wax will refine its search as you type. If there are too many result, you will see an overflow icon after the search string. You can narrow your search by typing additional words. For example, if the search string “Mozart” produces too many results, you can winnow the list by adding “symphony”. Wax will list works that contain all the words you provide anywhere in its metadata (work or track, primary or secondary). If you click on a search result, Wax will select the work on the Selector page. If Wax found the search string in the work metadata, it will select all the tracks. If it found the text in track metadata, it will select only the tracks containing the matching part of the search string. Note that the search string might be in secondary track metadata in which case you will not see it until you play the track (<a class="reference internal" href="play.html#track-metadata"><span class="std std-ref">track metadata</span></a>) or look at the <a class="reference internal" href="edit.html#secondary-track-metadata"><span class="std std-ref">secondary track metadata</span></a> in Edit mode. Double-click on an item in the search results to view all of its metadata in Play mode. Drag a search result to the play queue to listen to it.</p>
+<blockquote>
+<div><div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Wax normalizes strings when searching, so “name” is the same as “Name” and “dvorak” is the same as “Dvořák”. Wax discards words with fewer than 4 letters and numbers (e.g., years).</p>
+</div>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>Works match if the words that you specify appear <em>at the start</em> of any string in the metadata for a work. Thus, “moza” matches Mozart. This characteristic is why the search is “incremental”: Continuing to type additional letters narrows the search incrementally.</p>
+<p>Also, multiple words in the search string match <em>individually</em> with metadata for the work. Thus, you might type “cole” expecting to get a work match (shows) with music by Cy <em>Cole</em>man and then “sweet” to narrow the search to <em>Sweet</em> Charity, but find that you also got a track match with a recording of various show tunes containing a track of The <em>Sweet</em>est Sounds (by Richard Rodgers) and another of Friendship (by <em>Cole</em> Porter).</p>
+</div>
+</div></blockquote>
+</section>
+<section id="sibling">
+<span id="sibling-search"></span><h4>Sibling<a class="headerlink" href="#sibling" title="Link to this heading">¶</a></h4>
+<img alt="_images/search-sibling.png" class="align-center" src="_images/search-sibling.png" />
+<p>Siblings are works that came from the same CD or the same import. For example, a CD of Mozart symphonies, might have Symphonies 40 and 41 bundled on the same CD. When you rip this CD, you will probably <a class="reference internal" href="edit.html#multiple-works-one-cd"><span class="std std-ref">create separate works</span></a> for the two symphonies. Sibling search will automatically display all works created from a CD when you select a work. To enqueue one or more of the siblings, drag it to the play queue. To enqueue all siblings (in the same sequence they had on the original source), click the “Queue all” button.</p>
+</section>
+</section>
+<section id="random">
+<h3>Random<a class="headerlink" href="#random" title="Link to this heading">¶</a></h3>
+<img alt="_images/random.png" class="align-center" src="_images/random.png" />
+<p>Random is used for populating the queue with randomly selected items. You can specify the approximate duration of the randomly generated queue at the top of the panel. For each genre, you can specify a “weight”, which is the relative probability that Wax will select a work from the corresponding genre. Wax will select an individual track from each randomly selected work unless you check “all tracks”.</p>
+</section>
+<section id="queue-files">
+<h3>Queue files<a class="headerlink" href="#queue-files" title="Link to this heading">¶</a></h3>
+<img alt="_images/queue-files.png" class="align-center" src="_images/queue-files.png" />
+<p>If you create a play queue that you want to keep for later use, save it in a queue file: Put the desired name in the entry and then click Save. Wax displays a list of saved queue files. To use a saved queue file, select it and then click Load. Delete will delete the selected queue file. For each saved queue file, Wax displays its duration and the number of recordings in the queue file.</p>
+<p>It is possible that you deleted a work after including it in a saved queue. If a work is no longer playable, the entry that Wax creates in the play queue will have a red background. If you leave the entry in the play queue, Wax will play a warning sound when it reaches the unplayable item while playing. You can delete an unplayable item from the play queue and then resave the queue file to avoid the warning the next time you access the queue file. Wax displays the work in the queue even though it is unplayable so that you have enough information to fix the problem, if you prefer.</p>
+</section>
+</section>
+<section id="right-panel-play-queue">
+<h2>Right panel (play queue)<a class="headerlink" href="#right-panel-play-queue" title="Link to this heading">¶</a></h2>
+<span id="index-5"></span><img alt="_images/queue.png" class="align-center" id="play-queue" src="_images/queue.png" />
+<p>It is possible to queue selections for playback. Once you have selected the work and the tracks that you want to hear, simply drag the work to the Queue panel on the right. If there are already items in the play queue, drop the new item at the position corresponding to the desired sequence (usually that would be the space below the last item, in which case the new item will be appended to the end of the play queue). You can also rearrange the play queue by dragging entries to the desired sequence. The item at the top of the play queue is the one that will play when you push the play button.</p>
+<p>When you queue items in the play queue, Wax displays in the play queue the primary image for the work and a brief description of the work from the primary metadata (the metadata that appear in Select mode). If you want to know the track selections for an item in the play queue, click on the item. The panels on the left will change to show exactly what the item in the play queue represents. If you want to see all the metadata for the work, double-click on it; Wax will switch to Play mode (<a class="reference internal" href="play.html#play-mode"><span class="std std-ref">Play mode</span></a>), which is where you view the complete set of metadata.</p>
+<p>When you build a play queue, two numbers appear above the play queue. The one on the left is the duration of the selected item, the other the duration of the entire queue.</p>
+<p id="random-attribute">Right clicking on an item in the play queue opens a context menu. The first item in the menu can be used to delete the play queue item (like the “Remove item” choice in the Options menu). The second item sets the random attribute of the play queue item. Setting the random attribute causes Wax to randomize the sequence in which tracks within the item play.</p>
+</section>
+<section id="options">
+<h2>Options<a class="headerlink" href="#options" title="Link to this heading">¶</a></h2>
+<p>In Select mode, the Options menu offers two choices:</p>
+<ul class="simple">
+<li><p><strong>Remove item</strong>: remove the currently selected item from the play queue.</p></li>
+<li><p><strong>Clear play queue</strong>: remove all items from the play queue.</p></li>
+</ul>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Select Mode</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#essential-reading">Essential reading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#genre-selection">Genre selection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#left-panel-selecting-a-work">Left panel (selecting a work)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#selector">Selector</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#track-groups">Track groups</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#filter-buttons">Filter buttons</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#search">Search</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#incremental">Incremental</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sibling">Sibling</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#random">Random</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#queue-files">Queue files</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#right-panel-play-queue">Right panel (play queue)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#options">Options</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="play.html">Play Mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="edit.html">Edit Mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendix.html">Appendix</a></li>
+<li class="toctree-l1"><a class="reference internal" href="waxconfig.html">WaxConfig</a></li>
+</ul>
+
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2024, Jeffrey Barish.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/select.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

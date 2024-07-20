@@ -1,0 +1,27 @@
+Bad labels
+==========
+
+.. _create-genre:
+.. _auto-switch-to-play:
+.. _sound-folder:
+.. _remote-desktop:
+.. _attr-popup:
+.. _phantom_detector:
+.. _remove_zombies:
+.. _encoder-selection:
+.. _purge-cache:
+.. _move-operation:
+.. _bulk-transfer:
+.. _export-panel:
+.. _desktop-mode:
+.. _export-metadata:
+.. _name_extraction:
+.. _default-property-files:
+.. _completions-files:
+.. _search-props:
+.. _config-properties:
+.. _transfer-folder:
+.. _move-merge:
+.. _gap-duration:
+.. _abbreviators:
+.. _waxconfig:
