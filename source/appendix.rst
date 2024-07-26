@@ -75,6 +75,7 @@ Directories are structured as follows::
                                \_...
                         \_long
                         \_config
+                        \_completers
 
               \_images
                       \_uuid1
@@ -94,8 +95,6 @@ Config files (.config directory)
 .. _transfer-folder:
 
 - **transfer**: The transfer folder is used to transfer files to (:ref:`Import<file-mode>`) Wax. This folder may contain subfolders if you choose to create them. Note that when the :ref:`file chooser<file-chooser>` tells you that you are in the root folder, this is the folder you are actually in. Use this folder to import sound files, or to import :ref:`images<coverart-button>` or :ref:`documents<documents>` documents.
-
-- **completers**: Files in completers are named according to the metadata key for which the completions are intended.
 
 - **queuefiles**: Pickles of pixbufs of the primary image and play queue entries.
 
