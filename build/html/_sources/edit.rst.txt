@@ -305,6 +305,8 @@ The track page has a column of checkboxes on the left. They are used to select t
 
 To create separate works, first select the tracks for the first work. When you click "Save new", only they will be designated "playable". To save the second work, change the work metadata appropriately, then change the track selection to the second work. The selector double button at the top left of the Tracks page makes it easy to reverse the selection of tracks by selecting the Reverse option on the dropdown menu. Before you click save, examine the Save button. It is set to "Save new" initially because your purpose is to create a new work. Once you save the first work, though, Wax will set the function to "Save revision" because usually any subsequent save is for saving changes that you made to the metadata for the work that you just created. However, if you are actually creating an additional work, change the function back to "Save new".
 
+When you create multiple works from a single CD, note that each work has different work metadata and different track selections, but they all share the same cover art, documents, and properties.
+
 .. _edit-add-cd:
 
 Single work from multiple CDs
