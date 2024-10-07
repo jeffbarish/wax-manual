@@ -186,7 +186,7 @@ Documents
 
 The fourth page in Edit mode is for specifying documents. The Import button becomes sensitive when you select a PDF in the filechooser. After you import the PDF, its name is visible in the list near the top of the Docs page and the contents appear below that. You can step through the contents of the PDF using the next and prev buttons at the top left of the page.
 
-.. image:: figures/edit-work.png
+.. image:: figures/edit-docs.png
     :align: center
 
 .. _edit-properties:
