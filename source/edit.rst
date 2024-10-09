@@ -53,9 +53,6 @@ To revise an existing work, first select it (in :ref:`Select mode<select-mode>`)
 Work
 ++++
 
-.. image:: figures/edit-work.png
-    :align: center
-
 Notice that primary work metadata (the metadata that appear in Select mode) have two entries. One is for the long form and the other the short form. The width of the entry for the short form reflects the current width of the colum in Select mode, so you can tell immediately whether the string that you entered will fit. (If it does not fit, the text will be truncated with ellipsis.) Notice when you enter something in an entry for the long form that Wax will guess that you want the last name as the short form. Be aware that Wax sorts metadata based on the short form (see :ref:`guidelines<guidelines>` below).
 
 Also notice that entries have arrows to their left (the "name group" feature). Click on these to open additional entries for the given metadata key. For example, a key called "artist" takes the name of one artist, by default. If a work has two or more, use the arrow to open additional entries.
