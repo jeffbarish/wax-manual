@@ -71,7 +71,7 @@ Properties
 .. image:: figures/play-properties.png
     :align: center
 
-The Properties panel lists the properties.   The first two groups contain :ref:`automatic properties<edit-properties>`.  Wax assigns values to the automatic properties in the first group when you save a recording.  It assigns values to the automatic properties in the second group when you start ripping a CD or when you import files.  The third group (if it exists) is for any :ref:`user properties<user-properties>` that you defined (in waxconfig).
+The Properties panel lists the properties.   The first two groups contain :ref:`automatic properties<edit-properties>`.  Wax assigns values to the automatic properties in the first group when you create a work. Values in the second group get updated when you play a work. If you defined user properties (in :ref:`WaxConfig<user-properties>`), they will appear in a third group.
 
 .. index:: single: play; options menu
 

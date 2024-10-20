@@ -16,6 +16,7 @@ Welcome to wax's documentation!
    play
    edit
    appendix
+   glossary
    waxconfig
 
 

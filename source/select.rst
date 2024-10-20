@@ -129,15 +129,15 @@ Right panel (play queue)
 .. image:: figures/queue.png
     :align: center
 
-It is possible to queue selections for playback. Once you have selected the work and the tracks that you want to hear, simply drag the work to the Queue panel on the right. If there are already items in the play queue, drop the new item at the position corresponding to the desired sequence (usually that would be the space below the last item, in which case the new item will be appended to the end of the play queue). You can also rearrange the play queue by dragging entries to the desired sequence. The item at the top of the play queue is the one that will play when you push the play button.
+It is possible to queue selections for playback. Once you have selected the work and the tracks that you want to hear, simply drag the selection to the Queue panel on the right. Items in the play queue are called "sets". If there are already sets in the play queue, drop the new set at the position corresponding to the desired sequence (usually that would be the space below the last set, in which case the new set will be appended to the end of the play queue). You can also rearrange the play queue by dragging sets to the desired sequence. The set at the top of the play queue is the one that will play when you push the play button.
 
-When you queue items in the play queue, Wax displays in the play queue the primary image for the work and a brief description of the work from the primary metadata (the metadata that appear in Select mode). If you want to know the track selections for an item in the play queue, click on the item. The panels on the left will change to show exactly what the item in the play queue represents. If you want to see all the metadata for the work, double-click on it; Wax will switch to Play mode (:ref:`Play mode<play-mode>`), which is where you view the complete set of metadata.
+When you queue selections, Wax displays the primary image for the work and a brief description of the work from the primary metadata (the metadata that appear in Select mode). If you want to know the track selections for a set, click on the set. The selections on the left will change to show exactly what the set contains. If you want to see all the metadata for the set, double-click on it; Wax will switch to Play mode (:ref:`Play mode<play-mode>`), which is where you view the complete set of metadata for a work.
 
-When you build a play queue, two numbers appear above the play queue. The one on the left is the duration of the selected item, the other the duration of the entire queue.
+When you build a play queue, two numbers appear above the play queue. The one on the left is the duration of the selected set, the other the duration of the entire queue.
 
 .. _random-attribute:
 
-Right clicking on an item in the play queue opens a context menu. The first item in the menu can be used to delete the play queue item (like the "Remove item" choice in the Options menu). The second item sets the random attribute of the play queue item. Setting the random attribute causes Wax to randomize the sequence in which tracks within the item play.
+Right clicking on a set opens a context menu. The first item in the menu can be used to delete the set (like the "Remove item" choice in the Options menu). The second item sets the random attribute of the set. Setting the random attribute causes Wax to randomize the sequence in which tracks within the set play.
 
 Options
 -------

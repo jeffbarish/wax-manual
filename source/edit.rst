@@ -25,7 +25,7 @@ Once you start using Edit either to revise an existing work or to create a new o
 
 Save button
 -----------
-The Save button is a "double button". It has two functions available. The down arrow on the part of the double button to the right is used for choosing the function. Wax tries to anticipate the correct function and it sensitizes or desensitizes parts of the double button to forbid operations that do not make sense. Thus, when you enter Edit mode with a work selected, Wax anticipates that you are going to want to save a revision, so the button is set to "Save revision". If you actually want to save a new work, use the down arrow to select "Save new" and then click the left part of the button. When you are creating a new work, the Save button is set to "Save new". The "Create" button works in the same manner. Its alternative function is "Add CD". Details appear :ref:`below<edit-add-cd>`.
+The Save button is a "double button". It has two functions available. The down arrow on the part of the double button to the right is used for choosing the function. Wax tries to anticipate the correct function and it sensitizes or desensitizes parts of the double button to forbid operations that do not make sense. Thus, when you enter Edit mode with a work selected, Wax anticipates that you are going to want to save a revision, so the button is set to "Save revision". If you actually want to save a new work, use the down arrow to select "Save new" and then click the left part of the button. When you are creating a new work, the Save button is set to "Save new". The "Create" button works in the same manner. Its alternative function is "Add". Details appear :ref:`below<edit-add-cd>`.
 
 The Save button becomes sensitive when the current state of Edit mode is savable. When you are creating a new work, it is savable when the specification is complete. When you are revising an existing work, it is savable when you have made a change. Possible changes include:
 
@@ -75,7 +75,7 @@ Permanent secondary metadata keys are specified in the genre template. They appe
 
 .. _nonce-metadata:
 
-Nonce metadata are metadata that apply to specific works. For example, a work of Peter and the Wolf may need a place to put the name of the speaker. Click on +Meta to open an additional field. It works in the same way as the other fields except that you also specify the key (e.g., "speaker").
+Nonce metadata are metadata that apply to specific works. For example, a work of Peter and the Wolf may need a place to put the name of the speaker. Click on +Nonce to open an additional field. It works in the same way as the other fields except that you also specify the key (e.g., "speaker").
 
     .. WARNING::
         Keys for metadata must be unique. Wax already enforced this requirement when you specified primary and secondary metadata fields while creating a new genre in WaxConfig. However, you have another opportunity to violate this edict when creating nonce metadata. If you do, Wax will enforce the edict when you save by merging the values for any new nonce metadata fields into preexisting metadata fields with the same key.
@@ -154,27 +154,17 @@ The third page in Edit mode is for specifying images. Wax provides four ways to 
 
 When you enter Edit mode with an existing work selected, Wax will populate the image viewer with the images that you saved previously. If you actuate any of the buttons for importing images to the image viewer, you will be augmenting the set of images already present. You might, for example, actuate the download-from-the-cloud button to see whether better images or additional images (e.g., the rear cover) are available. It is likely in this scenario that you will end up with duplicates, so just delete the ones that you do not need before you click "Save revision".
 
-Download
-~~~~~~~~
-
-Musicbrainz usually provides links for CDs to cover art at Cover Art Archive and Amazon. Click the download-from-the-cloud button to acquire these images. Wax automatically requests them as one of the operations that it performs when you click Create.
-
-Extract
-~~~~~~~
-
-When you import a work, Wax will display all the images it finds embedded in the headers and a message will appear in the raw metadata that it found embedded images.
-
 Paste
 ~~~~~
 
 If you find appropriate cover art using another application (e.g., the browser), copy it to the clipboard and then paste it to Wax using the Paste button.
 
+Download from the cloud
+~~~~~~~~~~~~~~~~~~~~~~~
+
+MusicBrainz usually provides links for CDs to cover art at Cover Art Archive and Amazon. Click the download-from-the-cloud button to acquire these images. Wax automatically requests them as one of the operations that it performs when you click Create.
+
 .. _coverart-button:
-
-File
-~~~~
-
-When all else fails, you still have the option of scanning the cover yourself. Scan the cover using your desktop system and then copy the resulting file to the :ref:`transfer folder<transfer-folder>` in the Wax Box. The file open button will become sensitive when you select an image file in the filechooser.
 
 .. index:: single: edit; documents
 .. _documents:
@@ -195,16 +185,16 @@ The fourth page in Edit mode is for specifying documents. The Import button beco
 Properties
 ++++++++++
 
-Properties are also metadata, but unlike the metadata that we discussed above, the same properties appear in every work of every genre. Edit the values for these metadata on the final page in Edit mode.
+Properties are also metadata, but unlike the metadata that we discussed above, the same properties appear in every work regardless of genre.
 
 .. image:: figures/edit-props.png
     :align: center
 
 .. _automatic-properties:
 
-Wax maintains seven properties automatically. It assigns values to the first three (times played, date created, and date played) when you save a work, and it updates three of them (not date created) automatically when you play works. It assigns values to the remaining four when you start ripping a CD or when you import files. It will leave the value blank when the property is irrelevant or indeterminable. For example, the resolution (the number of bits per sample) varies for lossy encoders like Ogg. Sometimes tags contain invalid values (such as a sample rate of 0). For files, Wax attempts to populate "source" with the web site from which a file was purchased. It identifies the web site by searching for a URL among the tags. If it fails to find one, it will specify "File". The source for a rip is always "CD". Although Wax will set and update these values automatically, you are still allowed to edit them yourself.
+Wax maintains several properties automatically. It assigns a value to date created when you save a work, and it updates date played and times played when you play a work. It assigns remaining values when you start ripping a CD or when you import files as long as the value is relevant, determinable, and rational. (Sometimes tags contain invalid values such as a sample rate of 0.) For files, Wax attempts to populate "source" with the web site from which a file was purchased. It identifies the web site by searching for a URL among the tags. If it fails to find one, it will specify "File". The source for a rip is always "CD". Although Wax will set and update these values automatically, you are still allowed to edit them yourself.
 
-In addition to the automatic properties, you will also see here any user properties that you :ref:`defined in WaxConfig<user-properties>`.
+In addition to the automatic properties, you will also see here any user properties that you defined in :ref:`WaxConfig<user-properties>`.
 
 Wax displays properties in Play mode on the :ref:`Props page<play-props-page>`.
 
@@ -216,10 +206,10 @@ Files
 .. image:: figures/edit-files.png
     :align: center
 
-The Files panel provides information about the files comprising the work. The first line (in blue) is the unique number (UUID) assigned by Wax. The sound files and metadata are all stored in directories with the UUID. The next lines are the names of the actual sound files; they correspond to the tracks of the original CD that you ripped or the tracks that you imported. The track listing will include *all* the tracks from the corresponding CD. The tracks on the work currently selected will appear in white and any others in gray. You will also see image files and document files if any of these things are associated with the work. If the work encompasses more than one CD, then you will see additional blocks with an appropriate disc number. The listing concludes with the total size of all the sound files.
+The Files panel provides information about the files comprising the work. The first line (in blue) is the unique number (UUID) assigned by Wax. The sound files and metadata are all stored in directories with the UUID. The next lines are the names of the actual sound files; they correspond to the tracks of the original CD that you ripped or the tracks that you imported. The track listing will include *all* the tracks from the corresponding CD. The tracks on the work currently selected will appear in white and any others in gray. You will also see image files and document files if any of these things are associated with the work. If the work encompasses more than one CD, then you will see additional blocks with appropriate disc numbers. The listing concludes with the total size of all the sound files.
 
     .. TIP::
-        Clicking the button alongside the UUID will copy the UUID to your clipboard. If you ever need to use the file manager to examine the sound file directory, you can navigate to sound and then paste the directory name into the navigation entry.
+        Clicking the button alongside the UUID will copy the UUID to your clipboard. If you ever need to use the file manager to examine the sound file directory, you can navigate to the sound directory and then paste the subdirectory name (the uuid) into the navigation entry.
 
 .. _part-file:
 
@@ -250,7 +240,7 @@ Creating a new work involves four steps:
 
 - **Enter the metadata**. The steps required to enter the metadata depend on the degree of success Wax had in retrieving metadata automatically. Sometimes, Wax succeeds in finding all the metadata for both the work and the tracks. It might even have found the cover art automatically. If so, you are ready to save. If not, you will need to intervene.
 
-  For CDs, Wax obtains metadata from Musicbrainz. For imports, Wax obtains metadata from tags in the files. In either case, Wax presents all the metadata that it finds in the raw metadata panel on the right. If necessary, drag the divider at the top of that panel to expose more of the raw metadata.
+  For CDs, Wax obtains metadata from MusicBrainz. For imports, Wax obtains metadata from tags in the files. In either case, Wax presents all the metadata that it finds in the raw metadata panel on the right. If necessary, drag the divider at the top of that panel to expose more of the raw metadata.
 
 .. _genre-first:
 
@@ -279,7 +269,7 @@ Creating a new work involves four steps:
 .. _save-work:
 
     .. WARNING::
-        Once you have saved the work, Wax automatically selects it. You can go to Select mode, put the work in the play queue, and initiate play, but beware if the rip operation is still underway because Wax cannot play what has not been ripped. Because ripping is faster than playing, it should be safe to start playing as soon as the first track has been ripped (unless the first track is very short). Remember that sound files for each track do not exist until wax *finishes* ripping the track (:ref:`part file<part-file>`). If you ever try to play a track that has not yet been ripped, you will hear a warning sound to tell you that the sound file is not available.
+        Once you have saved the work, Wax automatically selects it. You can go to Select mode, put the work in the play queue, and initiate play, but beware if the rip operation is still underway because Wax cannot play what has not been ripped. Only tracks for which sound files exist *at the time you queue a selection* will play. Any tracks for which sound files do not yet exist will not play even if the ongoing rip produces a sound file before play attempts to play it. If the first track in a set does not have a corresponding sound file when you enqueue the set, you will hear a warning sound when you attempt to play the set and play will immediately terminate. Otherwise, Wax will play every track in the set for which a sound file exists at the time of enqueuing and then quit.
 
     .. WARNING::
         Before leaving Edit mode, always look at the Save button. If it is sensitive, something is savable. You probably want to click the Save button before you leave. If you do not save, Edit mode remains locked to the recording, so when you return to Edit mode you will have another opportunity either to save or to clear the work.
@@ -312,22 +302,22 @@ When you create multiple works from a single CD, note that each work has differe
 Single work from multiple CDs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You have just learned how to create multiple works from a single CD. Next we will consider the opposite case: one work from multiple CDs. Some works (e.g., most operas) are too long to fit on a single CD. Nevertheless, we want to store them in Wax as a single work. Start by entering the metadata for the first CD as described above. Insert the second CD and press the "Add CD" (*not Create!*) button. The tracks from the second CD will appear below the ones from the first CD. Wax will not alter the work metadata (as it would if you clicked Create). If you used the "Save new" button after ripping the first CD, you have already created the new work. After adding the tracks from the second CD, be sure to set the Save double button to "Save revision". If you did not save after ripping the first CD, then use "Save new". Just remember to use "Save new" the first time you use the save button for the work and *only* the first time.
+You have just learned how to create multiple works from a single CD. Next we will consider the opposite case: one work from multiple CDs. Some works (e.g., most operas) are too long to fit on a single CD. Nevertheless, we want to store them in Wax as a single work. Start by entering the metadata for the first CD as described above. Insert the second CD and press the "Add" (*not Create!*) button. The tracks from the second CD will appear below the ones from the first CD. Wax will not alter the work metadata (as it would if you clicked Create). If you used the "Save new" button after ripping the first CD, you have already created the new work. After adding the tracks from the second CD, be sure to set the Save double button to "Save revision". If you did not save after ripping the first CD, then use "Save new". Just remember to use "Save new" the first time you use the save button for the work and *only* the first time.
 
 Multiple works from multiple CDs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You may also encounter a multi-CD set with multiple works, e.g., various works by one composer spanning multiple CDs. The most straightforward way to handle this situation is through a combination of the techniques in the previous two sections. Start by clicking Create for the first CD to rip its tracks. Then click "Add CD" for subsequent CDs to rip their tracks. Select the tracks that correspond to the first work. Enter the appropriate metadata for the work and save a new work. Select the tracks for the next work, enter its work metadata, and save another new work. Continue until you have created new works for all the works on all the CDs. The procedure is the same as the one for creating multiple works from a single CD except that you use "Add CD" to add tracks from all CDs subsequent to the first.
+You may also encounter a multi-CD set with multiple works, e.g., various works by one composer spanning multiple CDs. The most straightforward way to handle this situation is through a combination of the techniques in the previous two sections. Start by clicking Create for the first CD to rip its tracks. Then click "Add" for subsequent CDs to rip their tracks. Select the tracks that correspond to the first work. Enter the appropriate metadata for the work and save a new work. Select the tracks for the next work, enter its work metadata, and save another new work. Continue until you have created new works for all the works on all the CDs. The procedure is the same as the one for creating multiple works from a single CD except that you use "Add" to add tracks from all CDs subsequent to the first.
 
     .. CAUTION::
-        Wax will permit you to treat each CD in the set separately (click Create with every CD in the set rather than Create for the first followed by "Add CD" for the rest). If you do, Wax will have no way to know that the works came from the same CD set. The works that you create will work fine in every way except one: A :ref:`sibling search<sibling-search>` for one of the works from the set will not find the other works in the set. If sibling search is not important to you, feel free to use this procedure rather than the one involving "Add CD". Also note that you will have to deal with the cover art for each CD rather than dealing with it once for the entire set. Obviously, if you are creating a single work from multiple CDs, you must use "Add CD" rather than Create.
+        Wax will permit you to treat each CD in the set separately (click Create with every CD in the set rather than Create for the first followed by "Add" for the rest). If you do, Wax will have no way to know that the works came from the same CD set. The works that you create will work fine in every way except one: A :ref:`sibling search<sibling-search>` for one of the works from the set will not find the other works in the set. If sibling search is not important to you, feel free to use this procedure rather than the one involving "Add". Also note that you will have to deal with the cover art for each CD rather than dealing with it once for the entire set. Obviously, if you are creating a single work from multiple CDs, you must use "Add" rather than Create.
 
 .. _reorder-tracks:
 
 Re-rip
 ~~~~~~
 
-If anything goes wrong when ripping a CD, you can click "Add CD" with the appropriate CD in the drive. Wax will repeat the process of ripping tracks for that CD without changing the work metadata.
+If anything goes wrong when ripping a CD, you can click "Add" with the appropriate CD in the drive. Wax will repeat the process of ripping tracks for that CD without changing the work metadata.
 
 .. _abort-button:
 
@@ -336,11 +326,11 @@ Abort
 
 When you are ripping a CD, a button appears for aborting the rip. Clicking the button halts ripping immediately. It also triggers some cleanup. The nature of the cleanup depends on the nature of the rip, but the objective always is to assure that aborting a rip does not leave unclaimed sound files behind. Unclaimed sound files ("zombies") consume disk space but cannot be played because no work refers to them.
 
-- If you are performing an initial rip of a CD that is not in any work, then clicking abort will cause Wax to delete any sound files already ripped and to clear any metadata.
+- If you are performing an initial rip of a CD that is not associated with any work, then clicking abort will cause Wax to delete any sound files already ripped and to clear any metadata.
 
-- If you clicked Abort after initiating a rip to add a CD for the first time to a work, then Wax will delete all the sound files associated with that CD and any metadata associated with that CD (track titles and images), but it will leave other metadata.
+- If you clicked Abort after initiating a rip to add a CD for the first time to a work, then Wax will delete all the sound files and any metadata associated with that CD (track titles and images), but it will leave other metadata.
 
-- If you clicked Abort after initiating a rip using "Add CD" of a CD that you already ripped (you are reripping the CD), Wax will simply stop ripping.
+- If you clicked Abort after initiating a rip using "Add" of a CD that you already ripped (you are reripping the CD), Wax will simply stop ripping.
 
 Tagging
 ~~~~~~~
@@ -381,7 +371,7 @@ Normally, you will import all tracks in a single operation using the Import mode
 
 .. _edit-liner-notes:
 
-You are allowed to include image or document files in your initial selection (before clicking Import). Wax will do the right thing with the files depending on their type: images from files are displayed in the image viewer and documents in the document viewer. Only the Import button has this power (not Add). If you import only sound files initially, then you can add files of other types using buttons specific to their type. Simply select the files of a particular type and then click the corresponding button. If they are image files, then the :ref:`file open<coverart-button>` button will become sensitive. If they are document files, then the :ref:`Import<doc-import-button>` button will become sensitive. Note that a message appears when you select files telling you what file types are in your selection.
+You are allowed to include files of different types (sound, image, or document) in your selection. Wax will do the right thing with the files depending on their type. A message appears when you select files telling you what file types are in your selection.
 
 If you are uncertain about the content of a file, right click and select Open on the context menu to open it in a handler (see the :ref:`tip<openable-files>` below for file types that are openable). An item in the list of files is rendered in italics when Wax does not recognize the file type or if something is wrong with the file (the header might be invalid or the encoding might be unsupported). If your selection encompasses one of these files, Wax will ignore it when you activate the import operation.
 
@@ -412,7 +402,7 @@ Options
 In Edit mode, the Options menu offers two choices:
 
 - **Show unicode kbd**: toggle the visibility of the :ref:`unicode keyboard<unicode-keyboard>`.
-- **Query MB**: populate the raw metadata panel with metadata from Musicbrainz. Use this option if you have already created a work from the CD, but you want to improve or augment the metadata. It is also useful if accessing Musicbrainz failed and you want to try again.
+- **Query MB**: populate the raw metadata panel with metadata from MusicBrainz. Use this option if you have already created a work from the CD, but you want to improve or augment the metadata. It is also useful if accessing MusicBrainz failed and you want to try again.
 - **Clear**: restore Edit mode to its last saved state (or to the state of the currently selected recording, if you changed the selection while editing).
 - **Delete**: delete a work. If it is the last work created from the CD or import, then it also deletes all sound files, images, and documents.
 
