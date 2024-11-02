@@ -269,7 +269,7 @@ Creating a new work involves four steps:
 .. _save-work:
 
     .. WARNING::
-        Once you have saved the work, Wax automatically selects it. You can go to Select mode, put the work in the play queue, and initiate play, but beware if the rip operation is still underway because Wax cannot play what has not been ripped. Only tracks for which sound files exist *at the time you queue a selection* will play. Any tracks for which sound files do not yet exist will not play even if the ongoing rip produces a sound file before play attempts to play it. If the first track in a set does not have a corresponding sound file when you enqueue the set, you will hear a warning sound when you attempt to play the set and play will immediately terminate. Otherwise, Wax will play every track in the set for which a sound file exists at the time of enqueuing and then quit.
+        Once you have saved the work, Wax automatically selects it. You can go to Select mode, put the work in the play queue, and initiate play, but beware if the rip operation is still underway because Wax cannot play what has not been ripped. A track must be completely ripped before Wax attempts to play it. If you attempt to play a track that has not been completely ripped, you will hear a warning sound. Because ripping is faster than playing, it is usually safe to initiate play as soon as the first track has been ripped.
 
     .. WARNING::
         Before leaving Edit mode, always look at the Save button. If it is sensitive, something is savable. You probably want to click the Save button before you leave. If you do not save, Edit mode remains locked to the recording, so when you return to Edit mode you will have another opportunity either to save or to clear the work.
