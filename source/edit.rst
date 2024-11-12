@@ -174,7 +174,7 @@ Documents
 
 .. _doc-import-button:
 
-The fourth page in Edit mode is for specifying documents. The Import button becomes sensitive when you select a PDF in the filechooser. After you import the PDF, its name is visible in the list near the top of the Docs page and the contents appear below that. You can step through the contents of the PDF using the next and prev buttons at the top left of the page.
+The fourth page in Edit mode is for specifying documents. The Add button becomes sensitive when you select a PDF in the file chooser. After you import the PDF, its name is visible in the list near the top of the Docs page and the contents appear below that. You can step through the contents of the PDF using the next and prev buttons at the top left of the page.
 
 .. image:: figures/edit-docs.png
     :align: center
@@ -222,17 +222,17 @@ The Files panel provides information about the files comprising the work. The fi
 Right panel (ripping and importing)
 -----------------------------------
 
-When you first enter Edit mode, you are in "Rip CD" mode by default (obtain sound data from a CD). The other mode is "Import" (import sound data from files). Use the tabs on the panel below the global controls to select the desired mode.
+When you first enter Edit mode, you are in "Rip CD" mode by default (obtain sound data from a CD). The other mode is "Add" (import sound data from files). Use the tabs on the panel below the global controls to select the desired mode.
 
 Creating a new work involves four steps:
 
 - **Select the genre**. Select the genre for the new work. In general, genres have different sets of primary and secondary metadata fields. If you change the genre after entering some metadata, Wax will preserve metadata by moving it as necessary between primary and secondary or by creating nonce metadata. However, choosing the correct genre before initiating an operation permits Wax to extract metadata more effectively (see :ref:`below<genre-first>`).
 
-- **Rip the CD or import files**. Click the appropriate tab on the right panel depending on whether you want to rip a CD or import files. On the Rip CD page, you will click the Create button to initiate a rip. It becomes sensitive when you insert a CD in the optical drive. On the Import page, you will click the Import button to initiate an importation. It becomes sensitive when you select at least one sound file in the file chooser.
+- **Rip the CD or import files**. Click the appropriate tab on the right panel depending on whether you want to rip a CD or import files. On the Rip CD page, you will click the Create button to initiate a rip. It becomes sensitive when you insert a CD in the optical drive. On the Import page, you will click the Create button to initiate an importation. It becomes sensitive when you select at least one sound file in the file chooser.
 
-  On pressing either the Create or Import button, Wax will erase any metadata that might be present on the left panel and it will sensitize the forms. It will attempt to fill those forms with metadata that it finds. The forms are insensitive until you initiate an operation because any values that you might otherwise have entered would be destroyed on initiation of the operation.
+  On pressing the Create button, Wax will erase any metadata that might be present on the left panel and it will sensitize the forms. It will attempt to fill those forms with metadata that it finds. The forms are insensitive until you initiate an operation because any values that you might otherwise have entered would be destroyed on initiation of the operation.
 
-  When you are ripping, Wax replaces the control panel with a panel containing a progress bar for monitoring progress through each track and an :ref:`Abort button<abort-button>` to abort ripping. It fills the form in the right panel with the raw metadata that it finds at MusicBrainz. Import happens almost instantaneously, so there is no need for a progress bar. Wax fills the raw metadata area with metadata that it finds in tags in the sound files.
+  When you are ripping, Wax replaces the control panel with a panel containing a progress bar for monitoring progress through each track and an :ref:`Abort button<abort-button>` to abort ripping. It fills the form in the right panel with the raw metadata that it finds at MusicBrainz. Add happens almost instantaneously, so there is no need for a progress bar. Wax fills the raw metadata area with metadata that it finds in tags in the sound files.
 
   When you start creating a new recording, Edit mode is dedicated to that recording. You can still return to Select mode, select a work, and view its metadata in Play mode. You can even play a work already in your collection. However, when you return to Edit mode, you will not enter revise mode on any selection, as described :ref:`above<edit-revising>`. Instead, you will find yourself back in create mode with any metadata that you might have entered for the work that you are currently creating.
 
@@ -269,7 +269,7 @@ Creating a new work involves four steps:
 .. _save-work:
 
     .. WARNING::
-        Once you have saved the work, Wax automatically selects it. You can go to Select mode, put the work in the play queue, and initiate play, but beware if the rip operation is still underway because Wax cannot play what has not been ripped. A track must be completely ripped before Wax attempts to play it. If you attempt to play a track that has not been completely ripped, you will hear a warning sound. Because ripping is faster than playing, it is usually safe to initiate play as soon as the first track has been ripped.
+        Once you have saved the work, Wax automatically selects it. You can go to Select mode, put the work in the play queue, and initiate play, but beware if the rip operation is still underway because Wax cannot play what has not been ripped. If you attempt to play a track that has not been *completely* ripped, you will hear a warning sound. Because ripping is faster than playing, it is usually safe to initiate play as soon as the first track has been ripped.
 
     .. WARNING::
         Before leaving Edit mode, always look at the Save button. If it is sensitive, something is savable. You probably want to click the Save button before you leave. If you do not save, Edit mode remains locked to the recording, so when you return to Edit mode you will have another opportunity either to save or to clear the work.
@@ -353,32 +353,34 @@ When you import sound files, they presumably already have tags.
 
 .. _file-mode:
 
-Importing
-+++++++++
+Import
+++++++
 
-Import is used for importing sound files. You might have obtained the sound files by purchasing tracks from a web store, by ripping an LP, or by ripping on your desktop system (see :ref:`tip<import-trick>`). Whatever their provenance, the first step is to copy them to the transfer directory of the Wax Box. Use your file browser -- e.g., Windows Explorer on a Windows platform or Finder on an Apple platform -- to navigate to your network, then to your Wax Box, then to the transfer folder. You might want to create a subfolder in which to store the sound files for a particular recording so that you can easily distinguish them.
+Import is used for importing files. The files could contain sound, cover art, or documents. You might have obtained the files by purchasing a recording from a web store, by ripping an LP, or by ripping on your desktop system (see :ref:`tip<import-trick>`). Whatever their provenance, the first step is to copy them to the transfer directory of the Wax Box. Use your file browser -- e.g., Windows Explorer on a Windows platform or Finder on an Apple platform -- to navigate to your network, then to your Wax Box, then to the transfer folder. You might want to create a subfolder in which to store the sound files for a particular recording so that you can easily distinguish them.
 
 .. _file-chooser:
 
-Once you have copied the sound files to the Wax Box, you will find them using the file chooser. Navigating in the file chooser requires the use of buttons at the bottom of the panel. Their functions are: move to the parent folder, create a subfolder of the current folder, and delete the selected file or files. If the folder is empty, the delete button will delete the current folder and move to the parent folder.
+Once you have copied the files to the Wax Box, you need to select them with the file chooser. Use the buttons at the bottom of the file chooser to navigate. Their functions are: move to the parent folder, create a subfolder of the current folder, and delete the selected files. If the folder is empty, the delete button will delete the current folder and move to the parent folder.
 
 .. image:: figures/edit-import.png
     :align: center
 
-To create a work from sound files that you import, start by selecting the appropriate genre. Next, select the files in the file chooser that you want to import. The Import button becomes sensitive when you select at least one sound file. Click it to effect the import. Wax copies the selected tracks into the sound archive. If there are tags in the sound files (there usually are), Wax will attempt to assign their values to the appropriate metadata fields in Wax. As in CD mode, Wax will put the tags in the raw metadata panel so that you can examine them.
+To create a work from sound files that you import, start by selecting the appropriate genre. Next, select the files in the file chooser that you want to import. The Create option becomes available (you can use the down arrow to select the Create function) and sensitive when you select at least one sound file. Click it to effect the import. Wax copies the selected tracks into the sound archive. If there are tags in the sound files (there usually are), Wax will attempt to assign their values to the appropriate metadata fields in Wax. As in Rip CD mode, Wax will put the tags in the raw metadata panel so that you can examine them.
 
-Normally, you will import all tracks in a single operation using the Import mode of the double button. However, it is also possible to *add* tracks using the Add mode of the double button. As in CD mode, adding tracks leaves the work metadata unchanged. Wax appends tracks to the end of the list of tracks whether the original tracks got there by ripping or importing.
+Normally, you will import all tracks in a single operation using the Create mode of the double button. However, it is also possible to *add* tracks using the Add mode of the double button. As in Rip CD mode, adding tracks leaves the work metadata unchanged. Wax appends tracks to the end of the list of tracks whether the original tracks got there by ripping or importing.
 
 .. _edit-liner-notes:
 
 You are allowed to include files of different types (sound, image, or document) in your selection. Wax will do the right thing with the files depending on their type. A message appears when you select files telling you what file types are in your selection.
+
+You will often use Import *in conjunction with* Rip CD to add cover art or liner notes to a recording you create from a CD. Simply select the desired files and Add them to the recording. Note that Wax will allow you to add images and documents while a rip is underway.
 
 If you are uncertain about the content of a file, right click and select Open on the context menu to open it in a handler (see the :ref:`tip<openable-files>` below for file types that are openable). An item in the list of files is rendered in italics when Wax does not recognize the file type or if something is wrong with the file (the header might be invalid or the encoding might be unsupported). If your selection encompasses one of these files, Wax will ignore it when you activate the import operation.
 
 .. _openable-files:
 
     .. TIP::
-        Wax has handlers for most file types that you are likely to encounter. Right-clicking on a file of a known type and selecting Open will open the file in the appropriate handler. The file types that Wax recognizes are most sound files (wav, flac, ogg, m4a, and mp3), jpg, pdf, and zip. Sound files play immediately using the default handler on your system. Opening a zip file starts an archive manager capable of extracting the files. This feature makes purchasing and importing downloads very convenient:  Make your purchase using a browser on the Wax Box. When you download your purchase, the browser will deposit it in the transfer folder. The tracks often arrive in a zip file. Open the zip file and then unzip the tracks into their own folder. Descend into the folder in the file chooser, select the tracks, and click Import.
+        Wax has handlers for most file types that you are likely to encounter. Right-clicking on a file of a known type and selecting Open will open the file in the appropriate handler. The file types that Wax recognizes are most sound files (wav, flac, ogg, m4a, and mp3), jpg, pdf, and zip. Sound files play immediately using the default handler on your system. Opening a zip file starts an archive manager capable of extracting the files. This feature makes purchasing and importing downloads very convenient:  Make your purchase using a browser on the Wax Box. When you download your purchase, the browser will deposit it in the transfer folder. The tracks often arrive in a zip file. Open the zip file and then unzip the tracks into their own folder. Descend into the folder in the file chooser, select the tracks, and click Create.
 
 .. _context-menu:
 
@@ -387,7 +389,12 @@ The context menu has three options: Open, Rename, and Delete. Opening a director
 .. _import-trick:
 
     .. TIP::
-        As discussed :ref:`above<enter-metadata>`, Wax looks in MusicBrainz for metadata when you rip a CD. If Wax does not find metadata, one solution is to type it all in. However, typing in all the metadata is cumbersome, especially when the CD has track titles in a foreign language. File mode introduces another option: Rip the CD on your desktop system using a standard media player (e.g., Windows Media Player or iTunes) and then import to Wax. These players use commercial databases (Rovi and Gracenote) with nearly complete coverage as their source for metadata, so it is likely that they will have metadata for the CD even when MusicBrainz does not. The media player will tag the tracks, so Wax will recover the metadata when you import. You probably will want to make some adjustments, but usually this procedure will greatly reduce the amount of typing required.
+        As discussed :ref:`above<enter-metadata>`, Wax looks in MusicBrainz for metadata when you rip a CD. If Wax does not find metadata, one solution is to type it all in. However, typing in all the metadata is cumbersome, especially when the CD has track titles in a foreign language. File mode introduces another option: Rip the CD on your desktop system using a standard media player (e.g., Windows Media Player or iTunes) and then import to Wax. These players use commercial databases as their source for metadata, so they might have metadata for the CD when MusicBrainz does not. The media player will tag the tracks, so Wax will recover the metadata when you import. You probably will want to make some adjustments, but usually this procedure will greatly reduce the amount of typing required.
+
+Re-import
+~~~~~~~~~
+
+If anything goes wrong when importing sound files, you can click "Add" with the relevant files selected in the file chooser. Wax will repeat the process of importing the sound files without changing the work metadata. But be aware that the selection of tracks when you click Add must match the selection you made when you clicked Create. For example, if you originally imported four tracks, you must select the same four tracks for Wax to recognize that you desire to re-import the tracks. If you try to re-import only one of the tracks, Wax will assume that you are actually adding another track to the recording.
 
 Clean-up
 ~~~~~~~~
