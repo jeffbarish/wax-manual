@@ -87,7 +87,7 @@ Directories are structured as follows::
                          \_uuid2
                          \_...
 
-On selection of a genre, Wax loads the contents of the short file with the genre as its name. Each line of the short file provides short metadata, a uuid, and a work number (work_num). When the user selects a recording, Wax uses the uuid and work_num to access the corresponding entry in the file "long" which contains long metadata for all recordings in the archive. All siblings have the same uuid, so the uuid is sufficient to access corresponding images, documents, and sound files in their respective directories. The sound directory is further divided by disc number. Imports have all sound files in the subdirectory for "disc 0".
+On selection of a genre, Wax loads the contents of the short file with the genre as its name. Each line of the short file provides short metadata, a uuid, and a work number (work_num). When the user selects a recording, Wax uses the uuid and work_num to access the corresponding entry in the file "long" which contains long metadata for all recordings in the archive. All siblings have the same uuid, so the uuid is sufficient to access corresponding images, documents, and sound files in their respective directories. The sound directory is further divided by disc number.
 
 Config files (.config directory)
 --------------------------------
