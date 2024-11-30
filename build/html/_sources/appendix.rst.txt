@@ -89,6 +89,23 @@ Directories are structured as follows::
 
 On selection of a genre, Wax loads the contents of the short file with the genre as its name. Each line of the short file provides short metadata, a uuid, and a work number (work_num). When the user selects a recording, Wax uses the uuid and work_num to access the corresponding entry in the file "long" which contains long metadata for all recordings in the archive. All siblings have the same uuid, so the uuid is sufficient to access corresponding images, documents, and sound files in their respective directories. The sound directory is further divided by disc number.
 
+Disk mounts
+-----------
+
+The simplest configuration for disk mounts is for the entire recordings hierarchy to reside on your system disk. However, that disk must have capacity sufficient for the database. 2TB is sufficient for a large collection. It is possible to find a 2TB SSD for $100, so this simple solution will be adequate for most users.
+
+If you already have your system installed on a smaller disk, you could add an SSD to your system and mount it on the :code:`recordings` directory.
+
+You can save a few dollars by choosing a HDD instead of an SSD, but a HDD adds complications. Allowing the HDD to spin all the time will shorten its lifespan. You can configure it to spin down after a period of inactivity using :code:`/etc/hdparm`, but you then have to wait for it to spin up when you need to access it. One option to minimize this annoyance is to use the HDD only for sound files and mount it on the :code:`sound` directory. The data in the other subdirectories of :code:`recordings` (:code:`metadata`, :code:`images`, and :code:`documents`) is typically much smaller, so there is probably sufficient space on your system drive (which presumably is an SSD). You can browse your collection in Select and Play modes without accessing sound files, so you will have to wait for the HDD to spin up (2-5 seconds typically, depending on the size of the HDD) only when you activate play.
+
+Also remember that you should back up your database to another drive. I use :code:`rsync` for this purpose -- something like
+
+.. code:: bash
+
+       rsync -a ~/wax/recordings/ /mnt/nas/wax/recordings/
+
+assuming that you have a NAS mounted at :code:`/mnt/nas`. Put this command in :code:`crontab` so that it runs automatically every day.
+
 Config files (.config directory)
 --------------------------------
 
