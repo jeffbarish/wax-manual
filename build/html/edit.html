@@ -36,37 +36,23 @@
 <section id="essential-reading">
 <h2>Essential reading<a class="headerlink" href="#essential-reading" title="Link to this heading">¶</a></h2>
 <p><a class="reference internal" href="#edit-introduction"><span class="std std-ref">Introduction</span></a> (paragraph 1)</p>
-<p><a class="reference internal" href="#edit-revising"><span class="std std-ref">Revising</span></a> (paragraph 1)</p>
-<p><a class="reference internal" href="#edit-creating"><span class="std std-ref">Ripping and importing</span></a> (the first paragraph of each of the four steps)</p>
+<p><a class="reference internal" href="#edit-revising"><span class="std std-ref">Left panel</span></a> (paragraph 1 and Work paragraph 1)</p>
+<p><a class="reference internal" href="#edit-creating"><span class="std std-ref">Right panel</span></a> (the first paragraph of each of the four steps)</p>
 </section>
 <section id="introduction">
 <span id="edit-introduction"></span><h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">¶</a></h2>
 <p>Edit mode can be used either for revising an existing work or creating a new one. The panel on the left is used for specifying the metadata and the panel on the right is used for obtaining metadata and sound data.</p>
 <p>Once you start using Edit either to revise an existing work or to create a new one, Wax reserves Edit mode for the work that you are creating. If you leave Edit mode – to select and play another work, perhaps – nothing will have changed when you return to Edit mode. Normally, Wax does not unlock Edit mode until you save your work. If you choose to abandon your work without saving it, the <a class="reference internal" href="#delete-options"><span class="std std-ref">Clear option</span></a> will remove all of your changes since the last save (or everything, if you never saved) and unlock Edit mode.</p>
 </section>
-<section id="save-button">
-<span id="index-1"></span><h2>Save button<a class="headerlink" href="#save-button" title="Link to this heading">¶</a></h2>
-<p>The Save button is a “double button”. It has two functions available. The down arrow on the part of the double button to the right is used for choosing the function. Wax tries to anticipate the correct function and it sensitizes or desensitizes parts of the double button to forbid operations that do not make sense. Thus, when you enter Edit mode with a work selected, Wax anticipates that you are going to want to save a revision, so the button is set to “Save revision”. If you actually want to save a new work, use the down arrow to select “Save new” and then click the left part of the button. When you are creating a new work, the Save button is set to “Save new”. The “Create” button works in the same manner. Its alternative function is “Add”. Details appear <a class="reference internal" href="#edit-add-cd"><span class="std std-ref">below</span></a>.</p>
-<p>The Save button becomes sensitive when the current state of Edit mode is savable. When you are creating a new work, it is savable when the specification is complete. When you are revising an existing work, it is savable when you have made a change. Possible changes include:</p>
-<ul class="simple">
-<li><p>Change genre</p></li>
-<li><p>Add/delete/modify work/track metadata</p></li>
-<li><p>Rearrange tracks</p></li>
-<li><p>Add/delete track groups</p></li>
-<li><p>Add/delete/rearrange images</p></li>
-<li><p>Add/delete documents</p></li>
-<li><p>Add/delete/modify properties</p></li>
-</ul>
-</section>
 <section id="left-panel-revising-and-creating">
-<span id="edit-revising"></span><span id="index-2"></span><h2>Left panel (revising and creating)<a class="headerlink" href="#left-panel-revising-and-creating" title="Link to this heading">¶</a></h2>
+<span id="index-1"></span><h2>Left panel (revising and creating)<a class="headerlink" href="#left-panel-revising-and-creating" title="Link to this heading">¶</a></h2>
 <p>You will use the left panel when revising or creating a work. When creating a work, the forms on the left panel start out blank. In most cases, Wax will fill in the forms automatically when you start ripping a CD or when you import files. You have the opportunity to polish the metadata by interacting with the forms.</p>
 <p>To revise an existing work, first select it (in <a class="reference internal" href="select.html#select-mode"><span class="std std-ref">Select mode</span></a>) and then switch to Edit mode. When you switch to Edit mode with a work selected, Wax enters all the metadata in the forms on the left panel. When you make a change, Wax displays a message briefly describing the change.</p>
 <section id="work">
-<span id="work-metadata"></span><span id="index-3"></span><h3>Work<a class="headerlink" href="#work" title="Link to this heading">¶</a></h3>
+<span id="work-metadata"></span><span id="index-2"></span><h3>Work<a class="headerlink" href="#work" title="Link to this heading">¶</a></h3>
 <img alt="_images/edit-work.png" class="align-center" src="_images/edit-work.png" />
 <p>Notice that primary work metadata (the metadata that appear in Select mode) have two entries. One is for the long form and the other the short form. The width of the entry for the short form reflects the current width of the colum in Select mode, so you can tell immediately whether the string that you entered will fit. (If it does not fit, the text will be truncated with ellipsis.) Notice when you enter something in an entry for the long form that Wax will guess that you want the last name as the short form. Be aware that Wax sorts metadata based on the short form (see <a class="reference internal" href="#guidelines"><span class="std std-ref">guidelines</span></a> below).</p>
-<p>Also notice that entries have arrows to their left (the “name group” feature). Click on these to open additional entries for the given metadata key. For example, a key called “artist” takes the name of one artist, by default. If a work has two or more, use the arrow to open additional entries.</p>
+<p>Also notice that entries have arrows to their left (the “<a class="reference internal" href="glossary.html#name-group"><span class="std std-ref">name group</span></a>” feature). Click on these to open additional entries for the given metadata key. For example, a key called “artist” takes the name of one artist, by default. If a work has two or more, use the arrow to open additional entries.</p>
 <p>A context menu (right click) offers several options for modifying an entry. If you click in a short metadata entry, one of these options is “Use long”. It will replace the value for the short metadata with the value already entered for the long form. “Reverse” applies to long entries with a comma. Sometimes, metadata optained from the web will specify names as “Last, First Middle”. Reverse transforms the entry to “First Middle Last”. If there is more than one comma, Wax reverses around the first comma on the left. “Swap with” makes it easy to move values  to the correct field by swapping the value in a given field with the one that you select in the menu.</p>
 <blockquote>
 <div><div class="admonition tip">
@@ -86,7 +72,7 @@
 <p id="autocompletion">Wax provides automatic completion for values you type into permanent work metadata. Possible completions appear on a popup menu. As you type additional characters, Wax winnows the list of completion options. Certain keys (composer, conductor, orchestra, and others) have predefined completion values (and you can <a class="reference internal" href="appendix.html#completers-files"><span class="std std-ref">define your own completion values</span></a> for any key). Note that automatic completion can be a convenient way to deal with unicode values. If you save a work with a name unknown to Wax, it will ask whether you want to add the name to the completers file for the corresponding key. It will also tell you how many names are already in the file. If the file gets too large, you might find that entering a value gets sluggish.</p>
 </section>
 <section id="tracks">
-<span id="edit-track-metadata"></span><span id="index-4"></span><h3>Tracks<a class="headerlink" href="#tracks" title="Link to this heading">¶</a></h3>
+<span id="edit-track-metadata"></span><span id="index-3"></span><h3>Tracks<a class="headerlink" href="#tracks" title="Link to this heading">¶</a></h3>
 <img alt="_images/edit-tracks.png" class="align-center" src="_images/edit-tracks.png" />
 <p>To edit track titles, click once to select the track and again to open it for editing. When you are done, click outside the track or type enter. Type Esc to leave Edit mode without saving the changes. For track titles, it is not possible to drag selections (selecting the text on the right panel closes the track), so you must use copy-and-paste.</p>
 <p>You can reorder tracks by dragging them to the desired position. Clicking on the up/down arrow at the right end of the item avoids activating edit mode. You can reorder tracks within a track group as well, but they must remain in the track group. You are allowed to drag a track group, but you may not drag either a track or a track group into a track group.</p>
@@ -127,7 +113,7 @@
 </section>
 </section>
 <section id="images">
-<span id="index-5"></span><span id="id3"></span><h3>Images<a class="headerlink" href="#images" title="Link to this heading">¶</a></h3>
+<span id="index-4"></span><span id="id3"></span><h3>Images<a class="headerlink" href="#images" title="Link to this heading">¶</a></h3>
 <img alt="_images/edit-images.png" class="align-center" src="_images/edit-images.png" />
 <p>The third page in Edit mode is for specifying images. Wax provides four ways to obtain images: download from the cloud (for CDs only), extract images embedded in the sound files (for files only), paste from the clipboard, and read from a file. All candidate images are stored in an image viewer. The viewer makes it possible to screen images to decide which to keep with the work. When there are multiple images, a stack of thumbnails appears to the left of the main image. The first thumbnail is the one that displays first in Play mode. The thumbnails can be rearranged as desired and individual thumbnails can be deleted using the Delete button. Wax saves all images in the image viewer to the work when you click “Save new” or “Save revision”.</p>
 <p>When you enter Edit mode with an existing work selected, Wax will populate the image viewer with the images that you saved previously. If you actuate any of the buttons for importing images to the image viewer, you will be augmenting the set of images already present. You might, for example, actuate the download-from-the-cloud button to see whether better images or additional images (e.g., the rear cover) are available. It is likely in this scenario that you will end up with duplicates, so just delete the ones that you do not need before you click “Save revision”.</p>
@@ -141,12 +127,12 @@
 </section>
 </section>
 <section id="documents">
-<span id="index-6"></span><span id="coverart-button"></span><span id="id4"></span><h3>Documents<a class="headerlink" href="#documents" title="Link to this heading">¶</a></h3>
+<span id="index-5"></span><span id="coverart-button"></span><span id="id4"></span><h3>Documents<a class="headerlink" href="#documents" title="Link to this heading">¶</a></h3>
 <p id="doc-import-button">The fourth page in Edit mode is for specifying documents. The Add button becomes sensitive when you select a PDF in the file chooser. After you import the PDF, its name is visible in the list near the top of the Docs page and the contents appear below that. You can step through the contents of the PDF using the next and prev buttons at the top left of the page.</p>
 <img alt="_images/edit-docs.png" class="align-center" src="_images/edit-docs.png" />
 </section>
 <section id="properties">
-<span id="index-7"></span><span id="edit-properties"></span><h3>Properties<a class="headerlink" href="#properties" title="Link to this heading">¶</a></h3>
+<span id="index-6"></span><span id="edit-properties"></span><h3>Properties<a class="headerlink" href="#properties" title="Link to this heading">¶</a></h3>
 <p>Properties are also metadata, but unlike the metadata that we discussed above, the same properties appear in every work regardless of genre.</p>
 <img alt="_images/edit-props.png" class="align-center" src="_images/edit-props.png" />
 <p id="automatic-properties">Wax maintains several properties automatically. It assigns a value to date created when you save a work, and it updates date played and times played when you play a work. It assigns remaining values when you start ripping a CD or when you import files as long as the value is relevant, determinable, and rational. (Sometimes tags contain invalid values such as a sample rate of 0.) For files, Wax attempts to populate “source” with the web site from which a file was purchased. It identifies the web site by searching for a URL among the tags. If it fails to find one, it will specify “File”. The source for a rip is always “CD”. Although Wax will set and update these values automatically, you are still allowed to edit them yourself.</p>
@@ -154,7 +140,7 @@
 <p>Wax displays properties in Play mode on the <a class="reference internal" href="play.html#play-props-page"><span class="std std-ref">Props page</span></a>.</p>
 </section>
 <section id="files">
-<span id="index-8"></span><h3>Files<a class="headerlink" href="#files" title="Link to this heading">¶</a></h3>
+<span id="index-7"></span><h3>Files<a class="headerlink" href="#files" title="Link to this heading">¶</a></h3>
 <img alt="_images/edit-files.png" class="align-center" src="_images/edit-files.png" />
 <p>The Files panel provides information about the files comprising the work. The first line (in blue) is the unique number (UUID) assigned by Wax. The sound files and metadata are all stored in directories with the UUID. The next lines are the names of the actual sound files; they correspond to the tracks of the original CD that you ripped or the tracks that you imported. The track listing will include <em>all</em> the tracks from the corresponding CD. The tracks on the work currently selected will appear in white and any others in gray. You will also see image files and document files if any of these things are associated with the work. If the work encompasses more than one CD, then you will see additional blocks with appropriate disc numbers. The listing concludes with the total size of all the sound files.</p>
 <blockquote>
@@ -172,7 +158,7 @@
 </section>
 </section>
 <section id="right-panel-ripping-and-importing">
-<span id="edit-creating"></span><span id="index-9"></span><h2>Right panel (ripping and importing)<a class="headerlink" href="#right-panel-ripping-and-importing" title="Link to this heading">¶</a></h2>
+<span id="edit-creating"></span><span id="index-8"></span><h2>Right panel (ripping and importing)<a class="headerlink" href="#right-panel-ripping-and-importing" title="Link to this heading">¶</a></h2>
 <p>When you first enter Edit mode, you are in “Rip CD” mode by default (obtain sound data from a CD). The other mode is “Add” (import sound data from files). Use the tabs on the panel below the global controls to select the desired mode.</p>
 <p>Creating a new work involves four steps:</p>
 <ul>
@@ -196,7 +182,7 @@
 <li><p>ctrl-v to paste it</p></li>
 </ul>
 <p>If an appropriate value is not present in the raw metadata, then you will have to type it in (see <a class="reference internal" href="#work-metadata"><span class="std std-ref">Work metadata</span></a> and <a class="reference internal" href="#edit-track-metadata"><span class="std std-ref">Track metadata</span></a> below) or you will use the trick described in the tip in File mode <a class="reference internal" href="#import-trick"><span class="std std-ref">below</span></a>. When you save the recording, Wax will ask whether you want it to remember the name so that it will recognize the name in the future.</p>
-<p id="index-10">When Wax finds metadata at MusicBrainz, you will find the track entries already filled in. When Wax fails to find metadata for a CD on the Internet, it still knows how many tracks are on the CD because that information is in the table of contents on the CD itself. In that case, it creates entries for the appropriate number of tracks and gives them default names (Track1, Track2, etc.). When importing, the track titles are always present in tags because the relevant tag is required.</p>
+<p id="index-9">When Wax finds metadata at MusicBrainz, you will find the track entries already filled in. When Wax fails to find metadata for a CD on the Internet, it still knows how many tracks are on the CD because that information is in the table of contents on the CD itself. In that case, it creates entries for the appropriate number of tracks and gives them default names (Track1, Track2, etc.). When importing, the track titles are always present in tags because the relevant tag is required.</p>
 </div></blockquote>
 <blockquote id="unicode-keyboard">
 <div><div class="admonition tip">
@@ -313,8 +299,22 @@
 </section>
 </section>
 </section>
+<section id="save-button">
+<span id="delete-options"></span><span id="index-10"></span><h2>Save button<a class="headerlink" href="#save-button" title="Link to this heading">¶</a></h2>
+<p>The Save button is a “double button”. It has two functions available. The down arrow on the part of the double button to the right is used for choosing the function. Wax tries to anticipate the correct function and it sensitizes or desensitizes parts of the double button to forbid operations that do not make sense. Thus, when you enter Edit mode with a work selected, Wax anticipates that you are going to want to save a revision, so the button is set to “Save revision”. If you actually want to save a new work, use the down arrow to select “Save new” and then click the left part of the button. When you are creating a new work, the Save button is set to “Save new”. The “Create” button works in the same manner. Its alternative function is “Add”. Details appear <a class="reference internal" href="#edit-add-cd"><span class="std std-ref">below</span></a>.</p>
+<p>The Save button becomes sensitive when the current state of Edit mode is savable. When you are creating a new work, it is savable when the specification is complete. When you are revising an existing work, it is savable when you have made a change. Possible changes include:</p>
+<ul class="simple">
+<li><p>Change genre</p></li>
+<li><p>Add/delete/modify work/track metadata</p></li>
+<li><p>Rearrange tracks</p></li>
+<li><p>Add/delete track groups</p></li>
+<li><p>Add/delete/rearrange images</p></li>
+<li><p>Add/delete documents</p></li>
+<li><p>Add/delete/modify properties</p></li>
+</ul>
+</section>
 <section id="options">
-<span id="delete-options"></span><span id="index-11"></span><h2>Options<a class="headerlink" href="#options" title="Link to this heading">¶</a></h2>
+<span id="edit-revising"></span><span id="index-11"></span><h2>Options<a class="headerlink" href="#options" title="Link to this heading">¶</a></h2>
 <p>In Edit mode, the Options menu offers two choices:</p>
 <ul>
 <li><p><strong>Show unicode kbd</strong>: toggle the visibility of the <a class="reference internal" href="#unicode-keyboard"><span class="std std-ref">unicode keyboard</span></a>.</p></li>
@@ -357,7 +357,6 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Edit Mode</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#essential-reading">Essential reading</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#save-button">Save button</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#left-panel-revising-and-creating">Left panel (revising and creating)</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#work">Work</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#tracks">Tracks</a><ul>
@@ -393,6 +392,7 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#save-button">Save button</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#options">Options</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#guidelines-for-creating-metadata">Guidelines for creating metadata</a></li>
 </ul>

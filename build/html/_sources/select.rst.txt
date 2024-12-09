@@ -9,7 +9,7 @@ Essential reading
 
 :ref:`Genre selection<genre_selection>`
 
-:ref:`Selecting a work<selecting_a_work>` (first two paragraphs)
+:ref:`Selector<selector>` (three paragraphs)
 
 Introduction
 ------------
@@ -27,12 +27,13 @@ Genre selection
 The genre-selection button (top left in Select mode) displays the identity of the current genre. Pressing the button pops open a menu with a list of all genres defined for your collection. When you select a genre, Wax displays below the genre button a list of the works in the genre.
 
 .. index:: single: select; selecting a work
-.. _selecting_a_work:
 
 Left panel (selecting a work)
 -----------------------------
 
 The left panel offers four pages with different methods for selecting recordings. You will use Selector most of the time. It presents a list of works for the selected genre. When you select a work, a panel opens with a list of tracks for the selected work. Search is used for searching for works. Random makes selections randomly based on criteria you control. Queue files selects works that you saved previously in queue files.
+
+.. _selector:
 
 Selector
 ~~~~~~~~

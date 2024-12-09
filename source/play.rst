@@ -9,7 +9,7 @@ Essential reading
 
 :ref:`Introduction<play-introduction>`
 
-:ref:`Metadata<work_metadata>` (first three paragraphs)
+:ref:`Metadata<work_metadata>` (two paragraphs)
 
 .. _play-introduction:
 
@@ -35,7 +35,7 @@ The left panel on the Metadata tab has four regions.  The first two apply to the
 
 Below each progress bar is space for metadata.  The space below the progress bar for the set is for metadata related to the work.  The space below the progress bar for the track is the metadata for the track: the title of its track group (if any), metadata for the track group, the title of the track, and any metadata specific to that track.  You can use this space to convey information such as the names of special artists who appear only on one track or of the composer and lyricist who wrote the song.  Wax adjusts the size of this panel automatically to accommodate the track metadata.
 
-Both progress bars have an associated button for viewing a time.  Clicking the button cycles the displayed time through time remaining, time elapsed, and total time.  The button to the far right of the set progress bar skips to the next set in the play queue.  The corresponding button for the track skips to the next track in the current play queue set. Click in the track progress bar to adjust the play time.  As a convenience, if you click *near* the beginning, Wax will jump to the beginning of the track.
+Both progress bars have an associated button for viewing a time.  Clicking the button cycles the displayed time through time remaining, time elapsed, and total time.  The button to the far right of the set progress bar skips to the next set in the play queue.  The corresponding button for the track skips to the next track in the current play queue set. Click in the track progress bar to adjust the play time.  As a convenience, if you click *near* the beginning, Wax will jump to the beginning of the track. If you ever want to restart play at the beginning of the set -- even if you have advanced beyond the first track in the set -- use the "Restart" option in the Options menu.
 
 The covers that appear at the bottom of the right panel depict the play queue.  Click on a cover to view the metadata for that recording. Note that the controls appear only when you select the first set in the queue -- the one that is playing (or stopped).
 

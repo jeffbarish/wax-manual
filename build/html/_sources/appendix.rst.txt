@@ -98,9 +98,7 @@ If you already have your system installed on a smaller disk, you could add an SS
 
 You can save a few dollars by choosing a HDD instead of an SSD, but a HDD adds complications. Allowing the HDD to spin all the time will shorten its lifespan. You can configure it to spin down after a period of inactivity using :code:`/etc/hdparm`, but you then have to wait for it to spin up when you need to access it. One option to minimize this annoyance is to use the HDD only for sound files and mount it on the :code:`sound` directory. The data in the other subdirectories of :code:`recordings` (:code:`metadata`, :code:`images`, and :code:`documents`) is typically much smaller, so there is probably sufficient space on your system drive (which presumably is an SSD). You can browse your collection in Select and Play modes without accessing sound files, so you will have to wait for the HDD to spin up (2-5 seconds typically, depending on the size of the HDD) only when you activate play.
 
-Also remember that you should back up your database to another drive. I use :code:`rsync` for this purpose -- something like
-
-.. code:: bash
+Also remember that you should back up your database to another drive. I use :code:`rsync` for this purpose -- something like::
 
        rsync -a ~/wax/recordings/ /mnt/nas/wax/recordings/
 

@@ -9,9 +9,9 @@ Essential reading
 
 :ref:`Introduction<edit-introduction>` (paragraph 1)
 
-:ref:`Revising<edit-revising>` (paragraph 1)
+:ref:`Left panel<edit-revising>` (paragraph 1 and Work paragraph 1)
 
-:ref:`Ripping and importing<edit-creating>` (the first paragraph of each of the four steps)
+:ref:`Right panel<edit-creating>` (the first paragraph of each of the four steps)
 
 .. _edit-introduction:
 
@@ -22,23 +22,6 @@ Edit mode can be used either for revising an existing work or creating a new one
 Once you start using Edit either to revise an existing work or to create a new one, Wax reserves Edit mode for the work that you are creating. If you leave Edit mode -- to select and play another work, perhaps -- nothing will have changed when you return to Edit mode. Normally, Wax does not unlock Edit mode until you save your work. If you choose to abandon your work without saving it, the :ref:`Clear option<delete-options>` will remove all of your changes since the last save (or everything, if you never saved) and unlock Edit mode.
 
 .. index:: single: edit; save button
-
-Save button
------------
-The Save button is a "double button". It has two functions available. The down arrow on the part of the double button to the right is used for choosing the function. Wax tries to anticipate the correct function and it sensitizes or desensitizes parts of the double button to forbid operations that do not make sense. Thus, when you enter Edit mode with a work selected, Wax anticipates that you are going to want to save a revision, so the button is set to "Save revision". If you actually want to save a new work, use the down arrow to select "Save new" and then click the left part of the button. When you are creating a new work, the Save button is set to "Save new". The "Create" button works in the same manner. Its alternative function is "Add". Details appear :ref:`below<edit-add-cd>`.
-
-The Save button becomes sensitive when the current state of Edit mode is savable. When you are creating a new work, it is savable when the specification is complete. When you are revising an existing work, it is savable when you have made a change. Possible changes include:
-
-* Change genre
-* Add/delete/modify work/track metadata
-* Rearrange tracks
-* Add/delete track groups
-* Add/delete/rearrange images
-* Add/delete documents
-* Add/delete/modify properties
-
-.. index:: single: edit; revising metadata
-.. _edit-revising:
 
 Left panel (revising and creating)
 ----------------------------------
@@ -58,7 +41,7 @@ Work
 
 Notice that primary work metadata (the metadata that appear in Select mode) have two entries. One is for the long form and the other the short form. The width of the entry for the short form reflects the current width of the colum in Select mode, so you can tell immediately whether the string that you entered will fit. (If it does not fit, the text will be truncated with ellipsis.) Notice when you enter something in an entry for the long form that Wax will guess that you want the last name as the short form. Be aware that Wax sorts metadata based on the short form (see :ref:`guidelines<guidelines>` below).
 
-Also notice that entries have arrows to their left (the "name group" feature). Click on these to open additional entries for the given metadata key. For example, a key called "artist" takes the name of one artist, by default. If a work has two or more, use the arrow to open additional entries.
+Also notice that entries have arrows to their left (the ":ref:`name group<name-group>`" feature). Click on these to open additional entries for the given metadata key. For example, a key called "artist" takes the name of one artist, by default. If a work has two or more, use the arrow to open additional entries.
 
 A context menu (right click) offers several options for modifying an entry. If you click in a short metadata entry, one of these options is "Use long". It will replace the value for the short metadata with the value already entered for the long form. "Reverse" applies to long entries with a comma. Sometimes, metadata optained from the web will specify names as "Last, First Middle". Reverse transforms the entry to "First Middle Last". If there is more than one comma, Wax reverses around the first comma on the left. "Swap with" makes it easy to move values  to the correct field by swapping the value in a given field with the one that you select in the menu.
 
@@ -403,6 +386,23 @@ The tracks that you copy from your desktop system to the transfer directory cons
 
 .. index:: single: edit; options menu
 .. _delete-options:
+
+Save button
+-----------
+The Save button is a "double button". It has two functions available. The down arrow on the part of the double button to the right is used for choosing the function. Wax tries to anticipate the correct function and it sensitizes or desensitizes parts of the double button to forbid operations that do not make sense. Thus, when you enter Edit mode with a work selected, Wax anticipates that you are going to want to save a revision, so the button is set to "Save revision". If you actually want to save a new work, use the down arrow to select "Save new" and then click the left part of the button. When you are creating a new work, the Save button is set to "Save new". The "Create" button works in the same manner. Its alternative function is "Add". Details appear :ref:`below<edit-add-cd>`.
+
+The Save button becomes sensitive when the current state of Edit mode is savable. When you are creating a new work, it is savable when the specification is complete. When you are revising an existing work, it is savable when you have made a change. Possible changes include:
+
+* Change genre
+* Add/delete/modify work/track metadata
+* Rearrange tracks
+* Add/delete track groups
+* Add/delete/rearrange images
+* Add/delete documents
+* Add/delete/modify properties
+
+.. index:: single: edit; revising metadata
+.. _edit-revising:
 
 Options
 -------

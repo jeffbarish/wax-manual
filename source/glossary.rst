@@ -15,6 +15,12 @@ Metadata, nonce
 ---------------
 Metadata that you create for a specific recording to handle a special situation (:ref:`nonce metadata<nonce-metadata>`).  They are not specified in the template for the genre.
 
+.. _name-group:
+
+Name group
+----------
+When a metadata key has more than one value (e.g., more than one artist), you can use the arrow button on the Edit | Work page to open additional fields. Wax will format each name on its own line in Select and Play modes when you use this feature. You also have the option of putting multiple values in one field separated by commas, but then they will all appear on one line.
+
 Properties
 ----------
 Properties describe characteristics of recordings, like metadata.  Unlike metadata, works in all genres have the same properties.  Wax updates Date played, and Times played when you play recordings. The others are set when you create a work. Users can specify additional properties ("user properties") in :ref:`WaxConfig<user-properties>`. All values are :ref:`editable<edit-properties>`, even ones maintained by Wax.
