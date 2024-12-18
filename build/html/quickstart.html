@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Installation &#8212; Wax 0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=cb25574f" />
+    <script src="_static/documentation_options.js?v=2709fde1"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="installation">
+<span id="index-0"></span><span id="id1"></span><h1>Installation<a class="headerlink" href="#installation" title="Link to this heading">¶</a></h1>
+<p>Installation instruction appear in the README for wax-install at github. They are reproduced here:</p>
+<p>Clone wax, wax-config, and wax-install (from the home directory):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">jeffbarish</span><span class="o">/</span><span class="n">wax</span><span class="o">.</span><span class="n">git</span>
+<span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">jeffbarish</span><span class="o">/</span><span class="n">wax</span><span class="o">-</span><span class="n">config</span><span class="o">.</span><span class="n">git</span>
+<span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">jeffbarish</span><span class="o">/</span><span class="n">wax</span><span class="o">-</span><span class="n">install</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+<p>cd into wax-install and run the program “installer.root” as root:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="o">./</span><span class="n">installer</span><span class="o">.</span><span class="n">root</span>
+</pre></div>
+</div>
+<p>Run installer as youself:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">installer</span>
+</pre></div>
+</div>
+<p>These scripts perform the following functions:</p>
+<p><code class="code docutils literal notranslate"><span class="pre">installer.root</span></code>:</p>
+<ul class="simple">
+<li><p>runs apt to install several packages.</p></li>
+<li><p>puts starter scripts for wax and waxconfig in /usr/local/bin.</p></li>
+</ul>
+<p><code class="code docutils literal notranslate"><span class="pre">installer</span></code>:</p>
+<ul class="simple">
+<li><p>puts the theme in ~/.themes.</p></li>
+<li><p>creates a virtual environment in ~/.venv and installs several packages.</p></li>
+<li><p>creates wax subdirectories in ~/wax/.config</p></li>
+</ul>
+<p>When the installer finishes, type “wax” to run wax or “waxconfig” to run waxconfig.</p>
+<p>I tested the code on Ubuntu 24.04 running on an Intel processor and on Debian GNU/Linux 12 (Raspberry Pi OS) running on Raspberry Pi 4B. Note that you will need GTK and GStreamer on whatever OS you choose.</p>
+<p>You can also install wax on Windows 11 using WSL 2. However, there are limitations. It is not possible to access a CD-drive as a device from WSL, so ripping in Wax on WSL is not possible. Instead, rip using Media Player, put the sound files in the transfer folder of Wax, and import them. Media Player does not embed cover art, so you will need to find cover art (at Amazon, for example) and copy-and-paste it into Wax.</p>
+</section>
+<section id="quick-start">
+<h1>Quick Start<a class="headerlink" href="#quick-start" title="Link to this heading">¶</a></h1>
+<p>To create your first recording after installing Wax, insert a CD in your CD drive and go to Edit mode. Select the appropriate genre for your CD using the button in the top left. Click the Create button in the right panel. While the CD is ripping, fill in the boxes on the left panel at least for the primary metadata. Some of the boxes might have been filled in automatically after you initiated the rip using metadata from MusicBrainz. Click the “Save new” button at the bottom when you are ready to save the recording. When the ripping finishes, change the Mode to Select. Your new recording will already be selected. Drag it to the play queue (the right panel). The play button will appear in the top right. Click it to start play. Congratulations. You have just created the first recording in your Wax database.</p>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select.html">Select Mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="play.html">Play Mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="edit.html">Edit Mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendix.html">Appendix</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="waxconfig.html">WaxConfig</a></li>
+</ul>
+
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2024, Jeffrey Barish.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/quickstart.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
