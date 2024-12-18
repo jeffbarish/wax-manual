@@ -12,6 +12,7 @@ Welcome to wax's documentation!
    :caption: Table of Contents
 
    introduction
+   installation
    select
    play
    edit
