@@ -114,3 +114,12 @@ Config files (.config directory)
 - **queuefiles**: Pickles of pixbufs of the primary image and play queue entries.
 
 - **log**: Log files with tracebacks of uncaught errors.
+
+Automatic tagging
+-----------------
+
+When you rip a CD, Wax automatically tags the sound files. If you ever copy your sound files to another platform (e.g., your smartphone), the player that you use on that platform will display the tags. Obviously, tags cannot contain all of the rich metadata available in Wax, but they can provide information sufficient to identify recordings. Unfortunately, standards for tags (ID3 notwithstanding) and for reassembling individual tracks into complete recordings are poor to nonexistent, so do not expect results as coherent as those provided by Wax.
+
+To tag sound files, Wax must convert its rich metadata to tags. The algorithms for performing this conversion reside in the module widgets.edit.left.tagextractors. In Wax, every genre generally has its own set of metadata keys. Accordingly, there must be a tag extractor for each genre. I provide a set of extractors for the genres that I provide with Wax. If you define your own genres and you want Wax to tag sound files corresponding to recordings in those genres, you must create your own extractors. Use the ones that I provided as models. You might also want to fiddle with the extractors that I provided. Your player might recognize more tags than mine. If so, you can add code to convert other Wax metadata to those tags. If you do not specify an extractor for a new genre, Wax politely declines to tag sound files in that genre.
+
+The dictionary self.metadata_long has metadata for both primary and secondary in their long form. self.metadata_short has metadata for primary in their short form. self.tags is the dictionary that contains all the tags for specifying the work. The call special method returns values for the track titles. The generic extractors are simple mappings from one Wax metadata key to one tag. Other extractors allow you to specify more complicated mappings involving multiple Wax keys going to one tag.
