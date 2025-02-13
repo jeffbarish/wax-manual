@@ -127,7 +127,7 @@ The dictionary self.metadata_long has metadata for both primary and secondary in
 Split liner notes
 -----------------
 
-Websites that sell recordings usually offer a PDF of the liner notes with your purchase. Sometimes, the PDF has two pages side by side. You will also encounter side-by-side pages in liner notes when you scan physical liner notes using a flatbed scanner. Wax will happily display side-by-side pages in the document viewers, but liner notes are easier to read when the PDF has individual pages on each PDF page. One of the tools available in the :code:`wax-tools` repository, :code:`splitlinernotes.py`, will split a PDF with side-by-side pages into a new PDF with individual pages. Run the program with the :code:`-h` option to get a help message. In most case, you will simply specify the name of the input file on the command line::
+Websites that sell recordings usually offer a PDF of the liner notes with your purchase. Sometimes, the PDF has two pages side by side. You will also encounter side-by-side pages in liner notes when you scan physical liner notes using a flatbed scanner. Wax will happily display side-by-side pages in the document viewers, but liner notes are easier to read when the PDF has individual pages on each PDF page. One of the tools available in the :code:`wax-tools` repository, :code:`splitlinernotes.py`, will split a PDF with side-by-side pages into a new PDF with individual pages. Run the program with the :code:`-h` option to get a help message. In most cases, you will simply specify the name of the input file on the command line::
 
        python splitlinernotes.py linernotes.pdf
 
