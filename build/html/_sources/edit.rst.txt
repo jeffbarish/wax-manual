@@ -358,7 +358,7 @@ You are allowed to include files of different types (sound, image, or document) 
 
 You will often use Import *in conjunction with* Rip CD to add cover art or liner notes to a recording you create from a CD. Simply select the desired files and Add them to the recording. Note that Wax will allow you to add images and documents while a rip is underway.
 
-If you are uncertain about the content of a file, right click and select Open on the context menu to open it in a handler (see the :ref:`tip<openable-files>` below for file types that are openable). An item in the list of files is rendered in italics when Wax does not recognize the file type or if something is wrong with the file (the header might be invalid or the encoding might be unsupported). If your selection encompasses one of these files, Wax will ignore it when you activate the import operation.
+If you are uncertain about the content of a file, right click and select Open on the context menu to open it in an external program (see the :ref:`tip<openable-files>` below for file types that are openable). An item in the list of files is rendered in gray when there is something wrong with the file (the header might be invalid or the encoding might be unsupported). You will not be able to select the file, which renders the file un-importable. However, you can right click on the file to open the context menu. Only the Delete option will be sensitive.
 
 .. _openable-files:
 
@@ -367,7 +367,7 @@ If you are uncertain about the content of a file, right click and select Open on
 
 .. _context-menu:
 
-The context menu has three options: Open, Rename, and Delete. Opening a directory descends into it. Opening a file invokes the appropriate handler, as discussed :ref:`above<openable-files>`. Deleting a folder will also delete the contents of the folder, including any subfolders and their contents. Note that the delete button operates on whatever is selected, but the Delete option operates only on the item you click on.
+Normally, the context menu has three options: Open, Rename, and Delete. Opening a directory descends into it. Opening a file invokes the appropriate handler, as discussed :ref:`above<openable-files>`. Deleting a folder will also delete the contents of the folder, including any subfolders and their contents. Note that the delete button operates on whatever is selected, but the Delete option operates only on the item you click on.
 
 .. _import-trick:
 
