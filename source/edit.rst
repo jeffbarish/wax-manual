@@ -348,7 +348,7 @@ Once you have copied the files to the Wax Box, you need to select them with the 
 .. image:: figures/edit-import.png
     :align: center
 
-To create a work from sound files that you import, start by selecting the appropriate genre. Next, select the files in the file chooser that you want to import. The Create option becomes available (you can use the down arrow to select the Create function) and sensitive when you select at least one sound file. Click it to effect the import. Wax copies the selected tracks into the sound archive. If there are tags in the sound files (there usually are), Wax will attempt to assign their values to the appropriate metadata fields in Wax. As in Rip CD mode, Wax will put the tags in the raw metadata panel so that you can examine them.
+To create a work from sound files that you import, start by selecting the appropriate genre. Next, select the files in the file chooser that you want to import. The Create option becomes available (you can use the down arrow to select the Create function, if necessary) and sensitive when you select at least one sound file. Click it to effect the import. Wax copies the selected tracks into the sound archive. If there are tags in the sound files (there usually are), Wax will attempt to assign their values to the appropriate metadata fields in Wax. As in Rip CD mode, Wax will put the tags in the raw metadata panel so that you can examine them.
 
 Normally, you will import all tracks in a single operation using the Create mode of the double button. However, it is also possible to *add* tracks using the Add mode of the double button. As in Rip CD mode, adding tracks leaves the work metadata unchanged. Wax appends tracks to the end of the list of tracks whether the original tracks got there by ripping or importing.
 
@@ -358,7 +358,7 @@ You are allowed to include files of different types (sound, image, or document) 
 
 You will often use Import *in conjunction with* Rip CD to add cover art or liner notes to a recording you create from a CD. Simply select the desired files and Add them to the recording. Note that Wax will allow you to add images and documents while a rip is underway.
 
-If you are uncertain about the content of a file, right click and select Open on the context menu to open it in an external program (see the :ref:`tip<openable-files>` below for file types that are openable). An item in the list of files is rendered in gray when there is something wrong with the file (the header might be invalid or the encoding might be unsupported). You will not be able to select the file, which renders the file un-importable. However, you can right click on the file to open the context menu. Only the Delete option will be sensitive.
+If you are uncertain about the content of a file, right click and select Open on the context menu to open it in an external program (see the :ref:`tip<openable-files>` below for file types that are openable). An item in the list of files is rendered in gray when there is something wrong with the file (the header might be invalid or the encoding might be unsupported). You will not be able to select the file, which renders the file un-importable. However, you can remove the file by right clicking on it to open the context menu. Only the Delete option will be sensitive.
 
 .. _openable-files:
 
